@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    {% block title %}
+          {{ page_title|default:"Untitled Page"}}
+    {% endblock title %}
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/vams/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vams/css/animate.css">
+
+    <link rel="stylesheet" href="/static/vams/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/vams/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/vams/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/static/vams/css/aos.css">
+
+    <link rel="stylesheet" href="/static/vams/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/static/vams/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/vams/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="/static/vams/css/flaticon.css">
+    <link rel="stylesheet" href="/static/vams/css/icomoon.css">
+    <link rel="stylesheet" href="/static/vams/css/style.css">
+
+    <script src="/static/vams/jquery/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+{% block nav %}
+    {% include "vams/navbar.html" %}
+{% endblock nav %}
+
+{% block content %}
+<!--  <p>hello</p>-->
+{% endblock content %}
+
+  <script src="/static/vams/js/jquery.min.js"></script>
+  <script src="/static/vams/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/vams/js/popper.min.js"></script>
+  <script src="/static/vams/js/bootstrap.min.js"></script>
+  <script src="/static/vams/js/jquery.easing.1.3.js"></script>
+  <script src="/static/vams/js/jquery.waypoints.min.js"></script>
+  <script src="/static/vams/js/jquery.stellar.min.js"></script>
+  <script src="/static/vams/js/owl.carousel.min.js"></script>
+  <script src="/static/vams/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/vams/js/aos.js"></script>
+  <script src="/static/vams/js/jquery.animateNumber.min.js"></script>
+  <script src="/static/vams/js/bootstrap-datepicker.js"></script>
+  <script src="/static/vams/js/jquery.timepicker.min.js"></script>
+  <script src="/static/vams/js/scrollax.min.js"></script>
+  <script src="/static/vams/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="/static/vams/js/google-map.js"></script>
+  <script src="/static/vams/js/main.js"></script>
+
+</body>
+</html>

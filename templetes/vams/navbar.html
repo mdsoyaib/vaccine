@@ -1,0 +1,39 @@
+
+{% block nav %}
+<div class="container">
+   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Vax<span>Care</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+
+				<li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
+                                <ul class="dropdown-menu" style="background:gray">
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'vaccine' %}">Vaccine</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'vaccination' %}">Vaccination</a></li>
+									<li class="nav-item"><a class="nav-link" href="{% url 'stock' %}">Vaccine Stock</a></li>
+									<li class="nav-item"><a class="nav-link" href="{% url 'report' %}">Report</a></li>
+								</ul></li>
+              <li class="nav-item"><a href="{% url 'staff' %}" class="nav-link">Staff</a></li>
+	          <li class="nav-item"><a href="{% url 'doctors' %}" class="nav-link">Doctors</a></li>
+	          <li class="nav-item"><a href="{% url 'patient' %}" class="nav-link">Patient</a></li>
+	          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+	          <li class="nav-item cta"><a href="{% url 'index' %}" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Make an Appointment</span></a></li>
+				<li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Signup</a></li>
+
+			</ul>
+	      </div>
+	    </div>
+	  </nav>
+
+</div>
+
+{% endblock nav %}
+
