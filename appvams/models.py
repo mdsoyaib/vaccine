@@ -115,11 +115,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)  # a superuser
 
-    phone = models.CharField(max_length=255, default=None, null=True)
-    address = models.TextField(default=None, null=True)
-    city = models.CharField(max_length=255, default=None, null=True)
-    state = models.CharField(max_length=255, default=None, null=True)
-    zip_code = models.CharField(max_length=255, default=None, null=True)
+    phone = models.CharField(max_length=255, default=None, null=True, blank=True)
+    address = models.TextField(default=None, null=True, blank=True)
+    city = models.CharField(max_length=255, default=None, null=True, blank=True)
+    state = models.CharField(max_length=255, default=None, null=True, blank=True)
+    zip_code = models.CharField(max_length=255, default=None, null=True, blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     updated_at = models.DateTimeField(auto_now=True)
